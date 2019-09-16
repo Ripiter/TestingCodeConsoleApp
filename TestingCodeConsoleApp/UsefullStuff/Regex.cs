@@ -14,9 +14,9 @@ namespace TestingCodeConsoleApp.UsefullStuff
         {
             string pattern = @"https?:\/\/(www\.)?(\w+)(\.\w+)";
             string input = @"https://www.google.com http://coreyms.com https://youtube.com https://www.nasa.gov";
-            RegexOptions options = RegexOptions.Multiline;
-            List<string> values = new List<string>();
-            foreach (Match m in Regex.Matches(input, pattern, options))
+            //RegexOptions options = RegexOptions.Multiline;
+            //List<string> values = new List<string>();
+            foreach (Match m in Regex.Matches(input, pattern))
             {
                 Console.WriteLine(m.Value);
             }

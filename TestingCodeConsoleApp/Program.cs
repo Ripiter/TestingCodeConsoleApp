@@ -1,10 +1,7 @@
 using System;
-using System.Diagnostics;
+using System.Threading;
+using System.Runtime.InteropServices;
 using System.IO;
-using TestingCodeConsoleApp.UsefullStuff;
-using System.Drawing;
-using System.Globalization;
-using System.Collections.Generic;
 
 namespace TestingCodeConsoleApp
 {
@@ -13,8 +10,8 @@ namespace TestingCodeConsoleApp
         static void Main(string[] args)
         {
             
-
             Console.ReadKey();
         }
     }
+    
 }

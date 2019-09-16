@@ -49,8 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animalcs.cs" />
-    <Compile Include="Dog.cs" />
     <Compile Include="Garbage\ThreadSavety.cs" />
     <Compile Include="NotUsefullStuff\BruteForce.cs" />
     <Compile Include="UsefullStuff\Calculating.cs" />
@@ -68,11 +66,14 @@
     <Compile Include="NotUsefullStuff\MultiThreading.cs" />
     <Compile Include="UsefullStuff\ParamsLearn.cs" />
     <Compile Include="UsefullStuff\RandomTesting.cs" />
+    <Compile Include="UsefullStuff\RecordAudioFile.cs" />
     <Compile Include="UsefullStuff\Regex.cs" />
     <Compile Include="UsefullStuff\Threads.cs" />
+    <Compile Include="UsefullStuff\XmlParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
