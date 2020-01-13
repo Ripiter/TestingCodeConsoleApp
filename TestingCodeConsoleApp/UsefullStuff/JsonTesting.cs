@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net;
 using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace TestingCodeConsoleApp
 {
@@ -62,5 +64,88 @@ namespace TestingCodeConsoleApp
             Console.WriteLine(json.GetBetween(temp));
             Console.WriteLine();
         }
+
+        
+        public void ReadingFromStream()
+        {
+            string s = string.Empty;
+            string path = @"c:\newJsonString.json";
+
+            using (Stream readingStream = File.OpenRead(path))
+            {
+                byte[] temp = new byte[10];
+                UTF8Encoding encoding = new UTF8Encoding(true);
+
+                int len = 0;
+
+                while ((len = readingStream.Read(temp, 0, temp.Length)) > 0)
+                {
+                    // Converts to string.
+                    s += encoding.GetString(temp, 0, len);
+                }
+            }
+        }
+
+        //string path = @"c:\textRpg.json";
+        //string chapter = "chapter_1";
+        //string jsonString = File.ReadAllText(path);
+        //JObject json = JObject.Parse(jsonString);
+        //string print = "";
+
+
+
+
+        //JToken jToken = json[chapter];
+        //print = (string)jToken["text"];
+        //Console.WriteLine(print);
+
+
+
+
+        //Console.WriteLine("Do combat");
+
+
+
+        //chapter = "chapter_2";
+        //jToken = json[chapter];
+        //print = (string)jToken["text"];
+        //Console.WriteLine(print);
+
+
+
+        //    string path = @"C:\Usefull Notes\jsonFormated.json";
+        //    string[] macFound = new string[] { "ac:a3:1e:f5:f0:c3", "36:f6:4b:af:f6:7c", "a" };
+
+        //            using (StreamReader sr = new StreamReader(path))
+        //            {
+        //                string json = sr.ReadToEnd();
+
+        //    JObject jObject = JObject.Parse(json);
+        //    JToken jUser;
+        //    string city;
+        //                for (int i = 0; i<macFound.Length; i++)
+        //                {
+        //                        jUser = jObject[macFound[i]];
+        //                    try
+        //                    {
+        //                        city = (string) jUser["city"];
+        //}
+        //                    catch (Exception e)
+        //                    {
+        //                        continue;
+        //                    }
+
+        //                    string floor = (string)jUser["floor"];
+        //string x = (string)jUser["x"];
+        //string y = (string)jUser["y"];
+
+        //Console.WriteLine("City : " + city);
+        //                    Console.WriteLine("Floor : " + floor);
+        //                    Console.WriteLine("X : " + x);
+        //                    Console.WriteLine("Y:" + y);
+        //                    Console.WriteLine("");
+        //                }
+        //            }
+        //            Console.ReadKey();
     }
 }

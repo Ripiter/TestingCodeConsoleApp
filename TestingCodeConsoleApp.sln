@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingOnEvents", "WorkingO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyOfEmils", "CopyOfEmils\CopyOfEmils.csproj", "{1950E2BB-D6D1-49AE-9A99-D0319BBA26EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleCoding", "TriangleCoding\TriangleCoding.csproj", "{08EE2B43-D198-4927-916C-3B841E677D32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1950E2BB-D6D1-49AE-9A99-D0319BBA26EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1950E2BB-D6D1-49AE-9A99-D0319BBA26EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1950E2BB-D6D1-49AE-9A99-D0319BBA26EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EE2B43-D198-4927-916C-3B841E677D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EE2B43-D198-4927-916C-3B841E677D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EE2B43-D198-4927-916C-3B841E677D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EE2B43-D198-4927-916C-3B841E677D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4EF2CEF-1380-4836-99EE-41F876849992}</ProjectGuid>
+    <ProjectGuid>{08EE2B43-D198-4927-916C-3B841E677D32}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WorkingOnEvents</RootNamespace>
-    <AssemblyName>WorkingOnEvents</AssemblyName>
+    <RootNamespace>TriangleCoding</RootNamespace>
+    <AssemblyName>TriangleCoding</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,15 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BogOmCSharp\Person.cs" />
-    <Compile Include="BogOmCSharp\Work.cs" />
-    <Compile Include="CleanEvent.cs" />
-    <Compile Include="DelegatesValues.cs" />
-    <Compile Include="FurtherEvents.cs" />
+    <Compile Include="AccessPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Race.cs" />
-    <Compile Include="Testing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
